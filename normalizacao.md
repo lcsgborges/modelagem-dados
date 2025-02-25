@@ -37,3 +37,12 @@ A normalização organiza as tabelas do banco de dados para evitar redundâncias
 
 ### Forma Normal de Boyce-Codd (BCNF)
 - Mais rigorosa que a 3NF, elimina dependências funcionais não triviais.
+
+## Resumo
+A normalização de dados é um processo sistemático utilizado na modelagem de bancos de dados para reduzir redundâncias e melhorar a integridade, organizando os dados em tabelas de acordo com regras chamadas formas normais.
+
+As diretrizes informais são critérios práticos para avaliar a qualidade das tabelas, visando assegurar esquemas claros e fáceis de entender, minimizar informações redundantes, reduzir valores NULL e evitar inconsistências.
+
+Dependências no contexto dos bancos de dados, referem-se às relações onde um ou mais atributos determinam outros atributos dentro de uma tabela, influenciando como os dados são organizados para manter a integridade e reduzir redundâncias.
+
+Formas normais são padrões que garantem níveis crescentes de rigor na organização de dados. Cada forma normal, da Primeira à Quinta, aborda tipos específicos de redundância e dependência, ajudando a estruturar o banco de dados de forma lógica e eficiente para facilitar operações e manutenção.
