@@ -13,3 +13,9 @@ Dependência Parcial ocorre quando um atributo em uma tabela depende apenas de p
 ## Dependência Total
 
 Dependência Total ocorre quando todos os atributos não chave em uma tabela dependem de toda a chave composta. Isso significa que para entender ou prever o valor de qualquer atributo não chave, precisamos conhecer todos os componentes da chave primária composta.
+
+## Dependência Transitiva
+
+A dependência transitiva ocorre quando um atributo em uma tabela depende de outro através de um terceiro atributo intermediário, formando uma cadeia de dependências.
+
+Por exemplo, se temos uma tabela com os atributos ID_Colaborador, ID_Departamento e Localizacao_Departamento. Temos aqui que o ID_Colaborador determina ID_Departamento, que por sua vez determina Localizacao_Departamento, então Localizacao_Departamento é transitivamente dependente de ID_Colaborador através de ID_Departamento. Esta configuração pode causar problemas, pois alterações na localização de um departamento exigiriam atualizações múltiplas e poderiam levar a dados desatualizados ou inconsistentes se não forem gerenciadas corretamente.
