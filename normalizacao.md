@@ -2,12 +2,6 @@
 
 A modelagem de dados é essencial para representar com precisão a estrutura e as relações de um sistema. No entanto, anomalias podem surgir, comprometendo a integridade dos dados. Para evitar esses problemas, utiliza-se o processo de normalização, que organiza os dados de forma eficiente e sem redundâncias.
 
-## Dependência Funcional
-
-A dependência funcional é um relacionamento entre dois atributos, ou conjuntos de atributos, dentro de uma tabela de banco de dados. Quando um atributo, chamado de determinante, tem a propriedade de determinar unicamente outro atributo, diz-se que há uma dependência funcional.
-
-Por exemplo, em uma tabela de colaboradores, se cada colaborador é identificado por um número único de identificação (ID do colaborador), então o ID do colaborador pode determinar unicamente outros atributos como nome do colaborador, endereço, telefone e departamento. Aqui, o ID do colaborador é o determinante, e os atributos nome, endereço, telefone e departamento são dependentes deste ID.
-
 ## Tipos de Anomalias
 1. **Anomalias de Inserção**: Dificuldade em inserir novos dados devido a restrições ou inconsistências.
 2. **Anomalias de Atualização**: Inconsistências ao atualizar dados em uma tabela.
@@ -29,6 +23,9 @@ A Primeira Forma Normal é o primeiro nível de normalização e um passo fundam
 - Exemplo: Separar listas de disciplinas cursadas em uma tabela própria.
 
 ### Segunda Forma Normal (2NF)
+
+Uma tabela está na Segunda Forma Normal se, e somente se, ela estiver na Primeira Forma Normal (1FN) e todos os seus atributos não chave forem totalmente dependentes da chave primária inteira, ou seja, não deve haver dependências parciais.
+
 - A tabela deve estar na 1NF e todos os atributos não chave devem depender completamente da chave primária.
 - Exemplo: Criar uma tabela separada para registrar notas de alunos.
 
