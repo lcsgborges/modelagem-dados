@@ -30,6 +30,9 @@ Uma tabela está na Segunda Forma Normal se, e somente se, ela estiver na Primei
 - Exemplo: Criar uma tabela separada para registrar notas de alunos.
 
 ### Terceira Forma Normal (3NF)
+
+Uma tabela está na Terceira Forma Normal se ela já está na Segunda Forma Normal e todos os seus atributos não chave são dependentes apenas das chaves primárias, não de outros atributos não chave. Em outras palavras, a 3FN é alcançada eliminando dependências transitivas.
+
 - A tabela deve estar na 2NF e todos os atributos não chave devem depender apenas da chave primária.
 - Exemplo: Separar informações de professores das disciplinas.
 
