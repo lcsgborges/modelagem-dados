@@ -37,14 +37,25 @@ Uma tabela está na Terceira Forma Normal se ela já está na Segunda Forma Norm
 - Exemplo: Separar informações de professores das disciplinas.
 
 ### Quarta Forma Normal (4NF)
+
+A 4FN é aplicada para resolver situações onde a associação independente de dois atributos a um terceiro pode levar a redundâncias desnecessárias. A aplicação da 4FN garante que as relações multivaloradas sejam divididas em tabelas separadas para evitar essas redundâncias.
+
 - Elimina dependências multivaloradas.
 - Exemplo: Criar uma tabela separada para representar produtos de interesse de clientes.
 
 ### Quinta Forma Normal (5NF)
+
+Lida com casos onde as tabelas envolvem várias dependências de junção. Uma tabela está na 5FN se e somente se ela não puder ser decomposta em outras tabelas sem perder informações ou gerar redundâncias. Isso ocorre tipicamente em estruturas de dados complexas com múltiplas entidades inter-relacionadas, garantindo que o banco de dados esteja livre de todas as redundâncias possíveis decorrentes das relações de junção.
+
 - Elimina anomalias de junção.
 - Exemplo: Separar cursos e professores para evitar erros na junção de tabelas.
 
 ### Forma Normal de Boyce-Codd (BCNF)
+
+A FNBC é uma extensão da Terceira Forma Normal que exige que todos os determinantes em uma tabela sejam chaves candidatas. Isso significa que qualquer atributo que determine outro deve ser uma chave única por si só, eliminando assim anomalias e redundâncias mais sutis que a 3FN pode deixar passar.
+
+A FNBC é particularmente útil em esquemas onde existem várias chaves candidatas e garante que todas as dependências funcionais sejam entre superchaves.
+
 - Mais rigorosa que a 3NF, elimina dependências funcionais não triviais.
 
 ## Resumo
