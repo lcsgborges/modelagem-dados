@@ -6,11 +6,6 @@ A modelagem de dados é essencial para representar com precisão a estrutura e a
 1. **Anomalias de Inserção**: Dificuldade em inserir novos dados devido a restrições ou inconsistências.
 2. **Anomalias de Atualização**: Inconsistências ao atualizar dados em uma tabela.
 3. **Anomalias de Exclusão**: Perda de informações importantes ao excluir registros.
-4. **Redundância de Dados**: Armazenamento duplicado, aumentando o espaço e dificultando a manutenção.
-5. **Dependências Funcionais Indesejadas**: Relações mal definidas entre dados.
-6. **Inconsistências de Dados**: Dados desatualizados ou conflitantes.
-7. **Dependências Multivaloradas**: Um atributo determina vários valores de outro atributo.
-8. **Anomalias de Junção**: Informações incorretas ao juntar tabelas mal estruturadas.
 
 ## Normalização de Dados
 A normalização organiza as tabelas do banco de dados para evitar redundâncias e anomalias. Isso é feito por meio das formas normais:
