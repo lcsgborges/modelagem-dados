@@ -19,3 +19,15 @@ Dependência Total ocorre quando todos os atributos não chave em uma tabela dep
 A dependência transitiva ocorre quando um atributo em uma tabela depende de outro através de um terceiro atributo intermediário, formando uma cadeia de dependências.
 
 Por exemplo, se temos uma tabela com os atributos ID_Colaborador, ID_Departamento e Localizacao_Departamento. Temos aqui que o ID_Colaborador determina ID_Departamento, que por sua vez determina Localizacao_Departamento, então Localizacao_Departamento é transitivamente dependente de ID_Colaborador através de ID_Departamento. Esta configuração pode causar problemas, pois alterações na localização de um departamento exigiriam atualizações múltiplas e poderiam levar a dados desatualizados ou inconsistentes se não forem gerenciadas corretamente.
+
+## Dependência Trivial 
+
+Ocorre quando um atributo ou conjunto de atributos depende de si mesmo ou inclui a chave completa em sua definição. Em termos práticos, uma dependência é considerada trivial se não fornecer informações novas ou únicas, como um atributo que depende de todo o conjunto de atributos em que está contido.
+
+## Dependência Multivalorada
+
+Uma dependência multivalorada ocorre quando dois ou mais atributos independentes em uma tabela estão relacionados a um terceiro atributo, mas não entre si. Por exemplo, um professor pode estar associado a vários departamentos e vários cursos, independentemente uns dos outros.
+
+## Dependência de Junção
+
+Uma dependência de junção ocorre quando uma tabela pode ser decomposta em duas ou mais tabelas e, em seguida, reconstruída (ou juntada) sem perder informações ou introduzir redundâncias. As dependências de junção são consideradas quando há uma complexidade nas relações que a 4FN não resolve completamente.
