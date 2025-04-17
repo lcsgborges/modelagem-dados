@@ -9,6 +9,3 @@ Este repositório é dedicado aos meus estudos sobre modelagem de dados. Aqui, a
 - Normalização e Denormalização
 - Tipos de Relacionamento
 - Regras de Integridade
-
-## Objetivo
-Meu objetivo com este repositório é consolidar conhecimento, praticar conceitos e manter um material de referência para futuras consultas sobre modelagem de dados.
